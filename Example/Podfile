@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VLCheckDeposit_Example' do
+  pod 'VLCheckDeposit', :path => '../'
+
+  target 'VLCheckDeposit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
