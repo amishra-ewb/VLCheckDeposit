@@ -1,5 +1,7 @@
 use_frameworks!
 
+source 'https://github.com/EastWestBank/VLPodSpec.git'
+
 target 'VLCheckDeposit_Example' do
   pod 'VLCheckDeposit', :path => '../'
 

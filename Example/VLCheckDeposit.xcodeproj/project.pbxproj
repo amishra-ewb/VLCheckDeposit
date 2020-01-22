@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2771447FC7383CE1C64912AD /* Pods_VLCheckDeposit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB31A210DDB4656AA108E3D /* Pods_VLCheckDeposit_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7BE730E7CBCC2EE49A8C3070 /* Pods_VLCheckDeposit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEAD44DF502A302DFC2770C /* Pods_VLCheckDeposit_Tests.framework */; };
+		D56E581C011FF1D1A5211239 /* Pods_VLCheckDeposit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8958022B6648914AF9C56CC4 /* Pods_VLCheckDeposit_Tests.framework */; };
+		DCE44CAFA14CBC8CBD0D567E /* Pods_VLCheckDeposit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8A0C6A467CD3EFF5B600E8 /* Pods_VLCheckDeposit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CF628B0BFF4D004A500A24B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		596766B9C598BADC47787FFA /* Pods-VLCheckDeposit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Example.release.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Example/Pods-VLCheckDeposit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		18620BAD23FA2A657AAA754F /* Pods-VLCheckDeposit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Tests.release.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Tests/Pods-VLCheckDeposit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1CF628B0BFF4D004A500A24B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		22227C808C98F76CA01D223A /* Pods-VLCheckDeposit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Tests/Pods-VLCheckDeposit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* VLCheckDeposit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLCheckDeposit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +41,12 @@
 		607FACE51AFB9204008FA782 /* VLCheckDeposit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLCheckDeposit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		693BD4E540DD3BE498C7953A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		73B96E095DB209A0D84D42CA /* Pods-VLCheckDeposit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Tests.release.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Tests/Pods-VLCheckDeposit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7AB31A210DDB4656AA108E3D /* Pods_VLCheckDeposit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLCheckDeposit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		868E17A523BBE7398363EDEF /* Pods-VLCheckDeposit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Example.debug.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Example/Pods-VLCheckDeposit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ACEAD44DF502A302DFC2770C /* Pods_VLCheckDeposit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLCheckDeposit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B200EB406BE006151B62632D /* VLCheckDeposit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VLCheckDeposit.podspec; path = ../VLCheckDeposit.podspec; sourceTree = "<group>"; };
-		B3A1A18DD1FD6A4ED58C3DDB /* Pods-VLCheckDeposit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Tests/Pods-VLCheckDeposit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		693BD4E540DD3BE498C7953A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		86CBD03E895FA1ADAE9D0277 /* Pods-VLCheckDeposit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Example.release.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Example/Pods-VLCheckDeposit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8958022B6648914AF9C56CC4 /* Pods_VLCheckDeposit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLCheckDeposit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200EB406BE006151B62632D /* VLCheckDeposit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VLCheckDeposit.podspec; path = ../VLCheckDeposit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7F9863D962AA68D8286BDB0 /* Pods-VLCheckDeposit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCheckDeposit_Example.debug.xcconfig"; path = "Target Support Files/Pods-VLCheckDeposit_Example/Pods-VLCheckDeposit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ED8A0C6A467CD3EFF5B600E8 /* Pods_VLCheckDeposit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLCheckDeposit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2771447FC7383CE1C64912AD /* Pods_VLCheckDeposit_Example.framework in Frameworks */,
+				DCE44CAFA14CBC8CBD0D567E /* Pods_VLCheckDeposit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE730E7CBCC2EE49A8C3070 /* Pods_VLCheckDeposit_Tests.framework in Frameworks */,
+				D56E581C011FF1D1A5211239 /* Pods_VLCheckDeposit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				8C8727A7565E6498CB431ED5 /* Pods */,
-				F6E85A995BF1CFDB23B96D94 /* Frameworks */,
+				C3771B0C922F81E62257326E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,20 +142,19 @@
 		8C8727A7565E6498CB431ED5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				868E17A523BBE7398363EDEF /* Pods-VLCheckDeposit_Example.debug.xcconfig */,
-				596766B9C598BADC47787FFA /* Pods-VLCheckDeposit_Example.release.xcconfig */,
-				B3A1A18DD1FD6A4ED58C3DDB /* Pods-VLCheckDeposit_Tests.debug.xcconfig */,
-				73B96E095DB209A0D84D42CA /* Pods-VLCheckDeposit_Tests.release.xcconfig */,
+				C7F9863D962AA68D8286BDB0 /* Pods-VLCheckDeposit_Example.debug.xcconfig */,
+				86CBD03E895FA1ADAE9D0277 /* Pods-VLCheckDeposit_Example.release.xcconfig */,
+				22227C808C98F76CA01D223A /* Pods-VLCheckDeposit_Tests.debug.xcconfig */,
+				18620BAD23FA2A657AAA754F /* Pods-VLCheckDeposit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F6E85A995BF1CFDB23B96D94 /* Frameworks */ = {
+		C3771B0C922F81E62257326E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AB31A210DDB4656AA108E3D /* Pods_VLCheckDeposit_Example.framework */,
-				ACEAD44DF502A302DFC2770C /* Pods_VLCheckDeposit_Tests.framework */,
+				ED8A0C6A467CD3EFF5B600E8 /* Pods_VLCheckDeposit_Example.framework */,
+				8958022B6648914AF9C56CC4 /* Pods_VLCheckDeposit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VLCheckDeposit_Example" */;
 			buildPhases = (
-				27E19BC424C6CF27436A3602 /* [CP] Check Pods Manifest.lock */,
+				89D76ECE14EC30A2B2C990E5 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				36DF321E9DC4913449606F9F /* [CP] Embed Pods Frameworks */,
+				C9F5A5182455A8B5AC533B8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VLCheckDeposit_Tests" */;
 			buildPhases = (
-				02C9289CA9E80A275459B3CC /* [CP] Check Pods Manifest.lock */,
+				6FB77FA15FF3B230A0BB4DC3 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,7 +262,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02C9289CA9E80A275459B3CC /* [CP] Check Pods Manifest.lock */ = {
+		6FB77FA15FF3B230A0BB4DC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,7 +284,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27E19BC424C6CF27436A3602 /* [CP] Check Pods Manifest.lock */ = {
+		89D76ECE14EC30A2B2C990E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,18 +306,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		36DF321E9DC4913449606F9F /* [CP] Embed Pods Frameworks */ = {
+		C9F5A5182455A8B5AC533B8E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VLCheckDeposit_Example/Pods-VLCheckDeposit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VLAPI/VLAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/VLAnalytics/VLAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/VLBaseClasses/VLBaseClasses.framework",
+				"${BUILT_PRODUCTS_DIR}/VLCache/VLCache.framework",
 				"${BUILT_PRODUCTS_DIR}/VLCheckDeposit/VLCheckDeposit.framework",
+				"${BUILT_PRODUCTS_DIR}/VLCommonClasses/VLCommonClasses.framework",
+				"${BUILT_PRODUCTS_DIR}/VLComponents/VLComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/VLResources/VLResources.framework",
+				"${BUILT_PRODUCTS_DIR}/VLThemes/VLThemes.framework",
+				"${BUILT_PRODUCTS_DIR}/VLUtilities/VLUtilities.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLBaseClasses.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLCheckDeposit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLCommonClasses.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLResources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLThemes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VLUtilities.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -475,7 +493,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 868E17A523BBE7398363EDEF /* Pods-VLCheckDeposit_Example.debug.xcconfig */;
+			baseConfigurationReference = C7F9863D962AA68D8286BDB0 /* Pods-VLCheckDeposit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VLCheckDeposit/Info.plist;
@@ -490,7 +508,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 596766B9C598BADC47787FFA /* Pods-VLCheckDeposit_Example.release.xcconfig */;
+			baseConfigurationReference = 86CBD03E895FA1ADAE9D0277 /* Pods-VLCheckDeposit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VLCheckDeposit/Info.plist;
@@ -505,7 +523,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3A1A18DD1FD6A4ED58C3DDB /* Pods-VLCheckDeposit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 22227C808C98F76CA01D223A /* Pods-VLCheckDeposit_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -527,7 +545,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73B96E095DB209A0D84D42CA /* Pods-VLCheckDeposit_Tests.release.xcconfig */;
+			baseConfigurationReference = 18620BAD23FA2A657AAA754F /* Pods-VLCheckDeposit_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

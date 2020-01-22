@@ -28,8 +28,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ashish.mishra@eastwestbank.com/VLCheckDeposit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '4.2'
+  
   s.source_files = 'VLCheckDeposit/Classes/**/*'
   
   # s.resource_bundles = {
@@ -39,4 +40,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'VLCommonClasses', '1.12.0'
+  s.dependency 'VLAPI', '1.12.0'
+  s.dependency 'VLComponents', '1.12.0'
+  s.dependency 'VLBaseClasses', '1.12.0'
 end
