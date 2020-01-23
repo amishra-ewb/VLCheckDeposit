@@ -10,11 +10,18 @@ import UIKit
 import VLComponents
 import VLResources
 import VLCommonClasses
+import VLThemes
 
 public class VLSnapCheckViewController: VLBaseViewController {
     
-    @IBOutlet weak var depositToDropDownView: VLDropdownView!
-    @IBOutlet weak var amountField: VLFormTextField!
+    // deposit outltes
+    @IBOutlet var depositToLabel: UILabel!
+    @IBOutlet weak var depositDropDown: VLDropdownView!
+    // amount outlets
+    @IBOutlet  var amountView: UIView!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var amountTextField: VLFormTextField!
+    @IBOutlet weak var amountStackView: UIStackView!
 
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +30,13 @@ public class VLSnapCheckViewController: VLBaseViewController {
     
     func configureUI() {
         // set navigation controller theme
-        setNavigationBar(title: "Snap Check" , leftBarImageName: VLResourcesImageConstants.back, rightBarImageName: "", style: .dark)
+        setNavigationBar(title: "Snap Check" , leftBarImageName: VLResourcesImageConstants.back, rightBarImageName: "", style: .light)
         self.setUpDepositToView()
-        self.setUpAmountField()
+        self.configureAmountView()
     }
     
     func setUpDepositToView() {
         let depositLabelsView = VLDepositLabelsView.fromNib() as VLDepositLabelsView
-        depositLabelsView.depositToLabel.text = "Deposit to"
-        depositLabelsView.depositToLabel.textColor = UIColor.blue
 
         depositLabelsView.accountNameLabel.text = "Velo Checking Account"
         depositLabelsView.accountNameLabel.textColor = UIColor.blue
@@ -40,33 +45,39 @@ public class VLSnapCheckViewController: VLBaseViewController {
         depositLabelsView.remainingBalanceLabel.textColor = UIColor.blue
 
         
-        self.depositToDropDownView.containerView.addSubview(depositLabelsView)
+        self.depositDropDown.selectedView = depositLabelsView
+        self.depositDropDown.isEnabled = false
 
     }
     
-    func setUpAmountField() {
-        
-        let leftLabel = UILabel()
-        leftLabel.text = "Amount"
-        leftLabel.textColor = UIColor.blue
-        
-        let rightLabel = UILabel()
-        rightLabel.text = "USD"
-        rightLabel.textColor = UIColor.blue
-
-        
-        self.amountField.textField.leftView = leftLabel
-        self.amountField.textField.rightView = rightLabel
-        
+    // Configure FromAmountView
+    private func configureAmountView() {
+        // set empty text to amount textfield
+        amountTextField.text = ""
+        amountTextField.placeholder = "Enter Deposit Amount"
+//        amountTextField.title = "transfermoney.amount.placeholder.title".localized()
+        amountTextField.isTopTitleHidden = true
+        amountTextField.set(style: .formFieldAmountOnLight)
+        amountTextField.delegate = self
+        amountTextField.setLeftText("$", style: .sectionHeaderOnLight, width: 15)
+        amountLabel.text = "Amount"
+        amountTextField.textField.keyboardType = .decimalPad
+        // done button on keyboard
+//        amountTextField.textField.addDoneButtonOnKeyboard(title: "vl.common.done.title.text".localized(), font: VLThemeManager.Label.headerDescriptionOnDark.textFont!, titleColor: .white, barStyle: .black)
     }
+    
+    
+}
+
+extension VLSnapCheckViewController: VLFormFieldDelegate {
     
 }
 
 
 
-extension UIView {
-    class func fromNib<T: UIView>() -> T {
-        return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-    }
-
-}
+//extension UIView {
+//    public class func fromNib<T: UIView>() -> T {
+//        return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+//    }
+//
+//}

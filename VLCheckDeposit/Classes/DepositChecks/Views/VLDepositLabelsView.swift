@@ -10,7 +10,6 @@ import UIKit
 
 public class VLDepositLabelsView: UIView {
 
-    @IBOutlet weak var depositToLabel: UILabel!
     @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var remainingBalanceLabel: UILabel!
     
