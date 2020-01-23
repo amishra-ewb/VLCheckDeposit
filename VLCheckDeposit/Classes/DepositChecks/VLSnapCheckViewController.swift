@@ -8,6 +8,8 @@
 
 import UIKit
 import VLComponents
+import VLUtilities
+import VLAnalytics
 import VLResources
 import VLCommonClasses
 import VLThemes
@@ -23,6 +25,11 @@ public class VLSnapCheckViewController: VLBaseViewController {
     @IBOutlet weak var amountTextField: VLFormTextField!
     @IBOutlet weak var amountStackView: UIStackView!
 
+    // continue Button
+    @IBOutlet weak var continueBUtton: UIButton!
+    @IBOutlet weak var limitsButton: UIButton!
+    
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.configureUI()
@@ -33,16 +40,18 @@ public class VLSnapCheckViewController: VLBaseViewController {
         setNavigationBar(title: "Snap Check" , leftBarImageName: VLResourcesImageConstants.back, rightBarImageName: "", style: .light)
         self.setUpDepositToView()
         self.configureAmountView()
+        self.setUpContinueButton()
+        self.setUpLimitsButton()
     }
     
     func setUpDepositToView() {
         let depositLabelsView = VLDepositLabelsView.fromNib() as VLDepositLabelsView
 
         depositLabelsView.accountNameLabel.text = "Velo Checking Account"
-        depositLabelsView.accountNameLabel.textColor = UIColor.blue
+        depositLabelsView.accountNameLabel.textColor = UIColor.lightGray
 
         depositLabelsView.remainingBalanceLabel.text = "Remaining bal is 1500$"
-        depositLabelsView.remainingBalanceLabel.textColor = UIColor.blue
+        depositLabelsView.remainingBalanceLabel.textColor = UIColor.lightGray
 
         
         self.depositDropDown.selectedView = depositLabelsView
@@ -64,6 +73,16 @@ public class VLSnapCheckViewController: VLBaseViewController {
         amountTextField.textField.keyboardType = .decimalPad
         // done button on keyboard
 //        amountTextField.textField.addDoneButtonOnKeyboard(title: "vl.common.done.title.text".localized(), font: VLThemeManager.Label.headerDescriptionOnDark.textFont!, titleColor: .white, barStyle: .black)
+    }
+    
+    private func setUpContinueButton() {
+        continueBUtton.setTitle("Continue", for: .normal)
+        continueBUtton.set(style: .primaryOnLight)
+    }
+    
+    private func setUpLimitsButton() {
+        limitsButton.setTitle("Mobile deposit limits and cutoff times apply", for: .normal)
+        limitsButton.set(style: .linkOnLight)
     }
     
     

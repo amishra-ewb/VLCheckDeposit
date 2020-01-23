@@ -29,10 +29,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2k-pF-v3d">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="482"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pNV-XA-zGD">
-                                                <rect key="frame" x="24" y="0.0" width="366" height="448"/>
+                                                <rect key="frame" x="24" y="0.0" width="366" height="482"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-3Y-4yt">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="116"/>
@@ -138,31 +138,43 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BwY-Z8-88h">
-                                                        <rect key="frame" x="0.0" y="192" width="366" height="150"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9K-d3-Wv4">
+                                                        <rect key="frame" x="0.0" y="192" width="366" height="30"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="hRr-W0-U4Z"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BwY-Z8-88h">
+                                                        <rect key="frame" x="0.0" y="227" width="366" height="149"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-Gd-479" customClass="VLRoundedImageView" customModule="VLCheckDeposit" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="150"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="168" height="149"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="149" id="XyQ-5K-NEL"/>
+                                                                    <constraint firstAttribute="width" constant="149" id="ydc-JB-nre"/>
+                                                                </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Is4-NX-9up" customClass="VLRoundedImageView" customModule="VLCheckDeposit" customModuleProvider="target">
-                                                                <rect key="frame" x="183" y="0.0" width="183" height="150"/>
+                                                                <rect key="frame" x="198" y="0.0" width="168" height="149"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="150" id="6w7-mx-MUU"/>
+                                                            <constraint firstItem="Is4-NX-9up" firstAttribute="height" secondItem="IXa-Gd-479" secondAttribute="height" id="4uc-UQ-yix"/>
+                                                            <constraint firstItem="Is4-NX-9up" firstAttribute="width" secondItem="IXa-Gd-479" secondAttribute="width" id="N0p-Gj-7RP"/>
                                                         </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY1-Dh-ktr">
-                                                        <rect key="frame" x="160" y="347" width="46" height="48"/>
+                                                        <rect key="frame" x="160" y="381" width="46" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="NP0-ZC-cED"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDJ-X4-R4V">
-                                                        <rect key="frame" x="160" y="400" width="46" height="48"/>
+                                                        <rect key="frame" x="160" y="434" width="46" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="Dwd-Tv-niM"/>
                                                         </constraints>
@@ -170,6 +182,8 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="BwY-Z8-88h" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="4jg-m1-lyh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BwY-Z8-88h" secondAttribute="trailing" id="Lu1-tP-gtY"/>
                                                     <constraint firstItem="pqB-vm-twU" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="VBp-9K-Nbz"/>
                                                     <constraint firstAttribute="trailing" secondItem="pqB-vm-twU" secondAttribute="trailing" id="VyG-vV-eGL"/>
                                                     <constraint firstItem="C5n-3Y-4yt" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="bBH-Af-vQ4"/>
@@ -209,8 +223,10 @@
                         <outlet property="amountLabel" destination="ntZ-Cr-iNk" id="Rvs-b5-abD"/>
                         <outlet property="amountStackView" destination="pqB-vm-twU" id="8dm-X2-zza"/>
                         <outlet property="amountTextField" destination="GNg-IB-JRk" id="men-BX-MyE"/>
+                        <outlet property="continueBUtton" destination="QY1-Dh-ktr" id="nbT-1A-tQK"/>
                         <outlet property="depositDropDown" destination="ATo-Mu-7H1" id="Vv9-iM-5Kg"/>
                         <outlet property="depositToLabel" destination="4HC-k1-3Jn" id="3Sy-kN-SKU"/>
+                        <outlet property="limitsButton" destination="cDJ-X4-R4V" id="yyp-jW-dr5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he1-lf-iej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
