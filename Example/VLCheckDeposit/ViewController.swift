@@ -10,6 +10,18 @@ import UIKit
 import VLCheckDeposit
 import VLCommonClasses
 
+public enum Storyboard: String {
+    case depositCheck
+    /// returns storyboard name.
+    public var name: String {
+        switch self {
+        case .depositCheck:
+            return "DepositCheck"
+
+        }
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,8 +31,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let viewController = VLSnapCheckViewController.load(from: Storyboard.depositCheck)
-        viewController.view.backgroundColor = UIColor.red
+        let viewController = VLSnapCheckViewController.load(storyboardName: Storyboard.depositCheck.name)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 

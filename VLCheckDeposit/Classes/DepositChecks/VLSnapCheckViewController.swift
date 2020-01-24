@@ -29,15 +29,26 @@ public class VLSnapCheckViewController: VLBaseViewController {
     @IBOutlet weak var continueBUtton: UIButton!
     @IBOutlet weak var limitsButton: UIButton!
     
+    var snapCheckViewModel: VLSnapCheckViewModel?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.setUpViewModel()
         self.configureUI()
+    }
+    
+    func setUpViewModel() {
+        guard let profile = VLRunTime.shared.profile else {return}
+        guard let account = VLRunTime.shared.accounts?.first else {return}
+        self.snapCheckViewModel = VLSnapCheckViewModel(profile: profile,
+                                                       account: account)
     }
     
     func configureUI() {
         // set navigation controller theme
-        setNavigationBar(title: "Snap Check" , leftBarImageName: VLResourcesImageConstants.back, rightBarImageName: "", style: .light)
+        setNavigationBar(title: "Snap Check", leftBarImageName: "back_arrow", rightBarImageName: nil, style: .light)
+        applyGradient = false
+//        self.backgroundGradientColor = nil
         self.setUpDepositToView()
         self.configureAmountView()
         self.setUpContinueButton()

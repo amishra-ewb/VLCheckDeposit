@@ -166,6 +166,13 @@
                                                             <constraint firstItem="Is4-NX-9up" firstAttribute="width" secondItem="IXa-Gd-479" secondAttribute="width" id="N0p-Gj-7RP"/>
                                                         </constraints>
                                                     </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkV-e1-Rx4">
+                                                        <rect key="frame" x="63" y="177" width="240" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="GVw-6T-a49"/>
+                                                        </constraints>
+                                                    </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY1-Dh-ktr">
                                                         <rect key="frame" x="160" y="381" width="46" height="48"/>
                                                         <constraints>
@@ -173,6 +180,13 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                     </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b6-6d-qfb">
+                                                        <rect key="frame" x="63" y="177" width="240" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Gbx-Y5-zPu"/>
+                                                        </constraints>
+                                                    </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDJ-X4-R4V">
                                                         <rect key="frame" x="160" y="434" width="46" height="48"/>
                                                         <constraints>
@@ -183,11 +197,15 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="BwY-Z8-88h" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="4jg-m1-lyh"/>
+                                                    <constraint firstItem="TkV-e1-Rx4" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="HYa-l3-zVR"/>
                                                     <constraint firstAttribute="trailing" secondItem="BwY-Z8-88h" secondAttribute="trailing" id="Lu1-tP-gtY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3b6-6d-qfb" secondAttribute="trailing" id="O4I-lB-zlK"/>
                                                     <constraint firstItem="pqB-vm-twU" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="VBp-9K-Nbz"/>
                                                     <constraint firstAttribute="trailing" secondItem="pqB-vm-twU" secondAttribute="trailing" id="VyG-vV-eGL"/>
+                                                    <constraint firstItem="3b6-6d-qfb" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="YiW-G6-Sr0"/>
                                                     <constraint firstItem="C5n-3Y-4yt" firstAttribute="leading" secondItem="pNV-XA-zGD" secondAttribute="leading" id="bBH-Af-vQ4"/>
                                                     <constraint firstAttribute="trailing" secondItem="C5n-3Y-4yt" secondAttribute="trailing" id="lPb-IF-kD1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TkV-e1-Rx4" secondAttribute="trailing" id="r53-sa-mgp"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -200,6 +218,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="X2k-pF-v3d" firstAttribute="leading" secondItem="WKc-Ye-zaQ" secondAttribute="leading" id="LT4-hs-hb8"/>
                                     <constraint firstItem="X2k-pF-v3d" firstAttribute="top" secondItem="WKc-Ye-zaQ" secondAttribute="top" id="W5E-eM-X9R"/>
