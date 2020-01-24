@@ -29,6 +29,13 @@ public class VLSnapCheckViewController: VLBaseViewController {
     @IBOutlet weak var continueBUtton: UIButton!
     @IBOutlet weak var limitsButton: UIButton!
     
+    @IBOutlet weak var remainingBalanceLabel: UILabel!
+    @IBOutlet weak var amountErrorLabel: UILabel!
+    @IBOutlet weak var amountSeperatorView: UIView!
+    
+    @IBOutlet weak var frontCameraView: VLRoundedImageView!
+    @IBOutlet weak var backCameraView: VLRoundedImageView!
+    
     var snapCheckViewModel: VLSnapCheckViewModel?
     
     override public func viewDidLoad() {
@@ -51,6 +58,7 @@ public class VLSnapCheckViewController: VLBaseViewController {
         self.backgroundGradientColor = nil
         self.setUpDepositToView()
         self.configureAmountView()
+        self.setUPCameraViews()
         self.setUpContinueButton()
         self.setUpLimitsButton()
     }
@@ -82,10 +90,28 @@ public class VLSnapCheckViewController: VLBaseViewController {
         amountTextField.delegate = self
         amountLabel.text = "Amount"
         amountTextField.textField.keyboardType = .decimalPad
+        amountTextField.setRightText("USD", style: .secondaryTitleOnLight, width: 35)
+        
+        self.remainingBalanceLabel.text = "Remaining mobile deposit limit: $1,000.00"
+        self.remainingBalanceLabel.textColor = .gray
+        
+        self.amountErrorLabel.isHidden = true
+        self.amountErrorLabel.text = "Deposit amount must be lower than remaining deposit limit"
+
 
 //        amountTextField.textField.addDoneButtonOnKeyboard(title: "vl.common.done.title.text".localized(), font: VLThemeManager.Label.headerDescriptionOnDark.textFont!, titleColor: .white, barStyle: .black)
     }
     
+    private func setUPCameraViews() {
+        self.frontCameraView.iconDescriptionLabel.text = "Front"
+        self.frontCameraView.clickAction = {
+            print("Do Something")
+        }
+        
+        self.backCameraView.iconDescriptionLabel.text = "Back"
+
+    }
+        
     private func setUpContinueButton() {
         continueBUtton.setTitle("Continue", for: .normal)
         continueBUtton.set(style: .primaryOnLight)
@@ -100,6 +126,39 @@ public class VLSnapCheckViewController: VLBaseViewController {
 }
 
 extension VLSnapCheckViewController: VLFormFieldDelegate {
+    
+    public func formFieldDidBeginEditing(_ view: VLBaseFormField) {
+        amountTextField.setLeftText("$", style: .sectionHeaderOnLight, width: 15)
+    }
+    
+    public func formField(_ view: VLBaseFormField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = amountTextField.text
+        let replacementText = (currentText as NSString).replacingCharacters(in: range, with: string)
+        
+        if replacementText == "100"{
+            self.showErrorMessage(isValidAmount: true)
+        }else {
+            self.showErrorMessage(isValidAmount: false)
+        }
+        
+        return true
+    }
+    
+    func showErrorMessage(isValidAmount: Bool) {
+        if isValidAmount {
+            //TODO: Color, LOcalizaed
+            self.amountErrorLabel.isHidden = true
+            self.amountSeperatorView.backgroundColor = UIColor.gray
+            self.frontCameraView.setState(state: .highlighted)
+
+        }else {
+            self.amountErrorLabel.isHidden = false
+            self.amountErrorLabel.textColor = UIColor.red
+            self.amountSeperatorView.backgroundColor = UIColor.red
+            
+            self.frontCameraView.setState(state: .normal)
+        }
+    }
     
 }
 

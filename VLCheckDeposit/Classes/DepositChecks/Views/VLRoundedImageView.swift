@@ -13,6 +13,7 @@ public enum ViewSelectedState {
     case highlighted
 }
 
+typealias TapActionHandler = () -> Void
 
 @IBDesignable class VLRoundedImageView: UIView {
         
@@ -46,6 +47,8 @@ public enum ViewSelectedState {
         }
     }
     
+    var clickAction: TapActionHandler? 
+    
     @IBOutlet var contentView: UIView!
     
     override init(frame: CGRect) {
@@ -66,6 +69,18 @@ public enum ViewSelectedState {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.arrangeDefaultUI()
+        
+        let tapGesture = UITapGestureRecognizer()
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.addTarget(self, action: #selector(self.handleTap(gestureRecognizer:)))
+        self.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap(gestureRecognizer: UIGestureRecognizer) {
+        guard let tapAction = self.clickAction else {
+            return
+        }
+        tapAction()
     }
     
     func arrangeDefaultUI() {
@@ -78,9 +93,11 @@ public enum ViewSelectedState {
         if state == .highlighted {
             self.borderColor = UIColor.blue
             self.centerIconImageView.tintColor = UIColor.blue
+            self.isUserInteractionEnabled = true
         }else {
             self.borderColor = UIColor.lightGray
             self.centerIconImageView.tintColor = UIColor.lightGray
+            self.isUserInteractionEnabled = false
         }
     }
     
