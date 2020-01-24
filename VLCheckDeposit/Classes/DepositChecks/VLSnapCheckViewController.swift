@@ -48,7 +48,7 @@ public class VLSnapCheckViewController: VLBaseViewController {
         // set navigation controller theme
         setNavigationBar(title: "Snap Check", leftBarImageName: "back_arrow", rightBarImageName: nil, style: .light)
         applyGradient = false
-//        self.backgroundGradientColor = nil
+        self.backgroundGradientColor = nil
         self.setUpDepositToView()
         self.configureAmountView()
         self.setUpContinueButton()

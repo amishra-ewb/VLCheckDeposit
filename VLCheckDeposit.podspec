@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
   s.swift_version = '4.2'
   
   s.source_files = 'VLCheckDeposit/Classes/**/*'
+  s.resources = 'VLCheckDeposit/Assets/**/*.{xcassets,json,imageset}'
   
   # s.resource_bundles = {
   #   'VLCheckDeposit' => ['VLCheckDeposit/Assets/*.png']
