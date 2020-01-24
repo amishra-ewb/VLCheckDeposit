@@ -20,6 +20,13 @@ public enum ViewSelectedState {
     @IBOutlet weak var centerIconImageView: UIImageView!
     @IBOutlet weak var iconDescriptionLabel: UILabel!
     
+    @IBInspectable
+    var labelInfo: String = "" {
+        didSet {
+            self.iconDescriptionLabel.text = labelInfo
+        }
+    }
+    
     
     var selectedState: ViewSelectedState = .normal {
         didSet {

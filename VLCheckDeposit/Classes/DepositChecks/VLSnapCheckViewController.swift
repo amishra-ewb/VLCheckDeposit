@@ -46,7 +46,7 @@ public class VLSnapCheckViewController: VLBaseViewController {
     
     func configureUI() {
         // set navigation controller theme
-        setNavigationBar(title: "Snap Check", leftBarImageName: "back_arrow", rightBarImageName: nil, style: .light)
+        setNavigationBar(title: "Snap Check", leftBarImageName: VLResourcesImageConstants.dark_black, rightBarImageName: nil, style: .light)
         applyGradient = false
         self.backgroundGradientColor = nil
         self.setUpDepositToView()
@@ -74,15 +74,15 @@ public class VLSnapCheckViewController: VLBaseViewController {
     private func configureAmountView() {
         // set empty text to amount textfield
         amountTextField.text = ""
-        amountTextField.placeholder = "Enter Deposit Amount"
-//        amountTextField.title = "transfermoney.amount.placeholder.title".localized()
+        
+        //TODO: Localized
+        amountTextField.title = "Enter deposit Amount"
         amountTextField.isTopTitleHidden = true
         amountTextField.set(style: .formFieldAmountOnLight)
         amountTextField.delegate = self
-        amountTextField.setLeftText("$", style: .sectionHeaderOnLight, width: 15)
         amountLabel.text = "Amount"
         amountTextField.textField.keyboardType = .decimalPad
-        // done button on keyboard
+
 //        amountTextField.textField.addDoneButtonOnKeyboard(title: "vl.common.done.title.text".localized(), font: VLThemeManager.Label.headerDescriptionOnDark.textFont!, titleColor: .white, barStyle: .black)
     }
     
@@ -109,5 +109,4 @@ extension UIView {
     public class func fromNib<T: UIView>() -> T {
         return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
     }
-
 }
