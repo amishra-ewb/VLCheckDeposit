@@ -59,8 +59,6 @@ public class VLSnapCheckViewController: VLBaseViewController {
         self.setUpDepositToView()
         self.configureAmountView()
         self.setUPCameraViews()
-        self.setUpContinueButton()
-        self.setUpLimitsButton()
     }
     
     func setUpDepositToView() {
@@ -111,17 +109,17 @@ public class VLSnapCheckViewController: VLBaseViewController {
         self.backCameraView.iconDescriptionLabel.text = "Back"
 
     }
-        
-    private func setUpContinueButton() {
-        continueBUtton.setTitle("Continue", for: .normal)
+    
+    public override func setupLocalization() {
+        continueBUtton.setTitle("Continue >", for: .normal)
+        limitsButton.setTitle("Mobile deposit limits and cutoff times apply >", for: .normal)
+
+    }
+    
+    override public func setupTheme() {
+        limitsButton.set(style: .linkOnLight)
         continueBUtton.set(style: .primaryOnLight)
     }
-    
-    private func setUpLimitsButton() {
-        limitsButton.setTitle("Mobile deposit limits and cutoff times apply", for: .normal)
-        limitsButton.set(style: .linkOnLight)
-    }
-    
     
 }
 
