@@ -1,0 +1,65 @@
+PODS:
+  - VLAnalytics (1.11.0):
+    - VLAnalytics/ADBMobile (= 1.11.0)
+  - VLAnalytics/ADBMobile (1.11.0)
+  - VLAPI (1.12.0):
+    - VLCache (= 0.1.0)
+    - VLUtilities (= 1.12.0)
+  - VLBaseClasses (1.12.0):
+    - VLUtilities (= 1.12.0)
+  - VLCache (0.1.0)
+  - VLCheckDeposit (0.1.0):
+    - VLAPI (= 1.12.0)
+    - VLBaseClasses (= 1.12.0)
+    - VLCommonClasses (= 1.12.0)
+    - VLComponents (= 1.12.0)
+  - VLCommonClasses (1.12.0):
+    - VLAnalytics (= 1.11.0)
+    - VLAPI (= 1.12.0)
+    - VLBaseClasses (= 1.12.0)
+    - VLComponents (= 1.12.0)
+    - VLThemes (= 1.12.0)
+    - VLUtilities (= 1.12.0)
+  - VLComponents (1.12.0):
+    - VLThemes (= 1.12.0)
+    - VLUtilities (= 1.12.0)
+  - VLResources (1.12.0)
+  - VLThemes (1.12.0):
+    - VLResources (= 1.12.0)
+  - VLUtilities (1.12.0):
+    - VLResources (= 1.12.0)
+
+DEPENDENCIES:
+  - VLCheckDeposit (from `../`)
+
+SPEC REPOS:
+  https://github.com/EastWestBank/VLPodSpec.git:
+    - VLAnalytics
+    - VLAPI
+    - VLBaseClasses
+    - VLCache
+    - VLCommonClasses
+    - VLComponents
+    - VLResources
+    - VLThemes
+    - VLUtilities
+
+EXTERNAL SOURCES:
+  VLCheckDeposit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VLAnalytics: 10ef1c59fb66e23f973e177e07cef4d529ab5468
+  VLAPI: b4c4717fd7c1ad9c1a74b518a734aa0bf270042e
+  VLBaseClasses: b93d76671216f371fb17e9e31beff89beea10e48
+  VLCache: c87bd3800a0ea95edb675c28916caeb98512d414
+  VLCheckDeposit: 2ef139f3db1dc9b422b202346e47b2a20791d98e
+  VLCommonClasses: 212697b89d516966065755618d7c31c820ce7424
+  VLComponents: ee2575e530f2113a6b0db9660e81f777e54a82b1
+  VLResources: 99c9a120faa92e634f353244ce72e228d7bb4a62
+  VLThemes: 07cbfcc6ac40e2b15c8874d41fdd123e63db49c7
+  VLUtilities: 4d1b7d718ac70f92158a88188de518c39c524cfc
+
+PODFILE CHECKSUM: c8f908b6b18e722cd5fc10ebe19c4864c83d63f0
+
+COCOAPODS: 1.8.4
